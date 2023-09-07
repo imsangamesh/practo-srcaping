@@ -1,0 +1,941 @@
+{
+  "name": "Dr. Baswaraj Biradar",
+  "image": "https://images1-fabric.practo.com/doctor/339305/dr-baswaraj-biradar-648847a678049.png",
+  "type": "Dentist",
+  "description": "Dr Baswaraj Biradar had done BDS, MDS (prosthodontics and Implantology)\n\nDr Baswaraj, graduated as the Best outgoing student of the year 1998, during his Bachelors at M S Ramaiah Dental College. He secured 20th Rank in the Karnataka state entrance examination. Subsequently, pursued his Masters from premier institute,   A B Shetty Memorial Institute of Dental Sciences in the department of Prosthodontics and Implantology. He has 13 years of experience as a dental teaching Faculty. He held various positions as a Professor, Postgraduate guide and head of the prosthodontics department in various institutions such as MS Ramaiah Dental college, Vydehi Dental College, Oxford Dental college, Subbaiah institute of Dental Sciences. \nDr Baswaraj Biradar is practicing General dentistry, Prosthodontics and Implantotology since 25 years. Having earned his MDS degree, he is equipped with the latest education, training, and technology to provide the highest quality care. Most importantly, he will ensure you understand the treatment you need, helping you feel relaxed and confident. \nDuring his free time, you can find him playing badminton and cricket.",
+  "degree": [
+    "Implantologist",
+    "Dentist",
+    "Cosmetic/Aesthetic Dentist",
+    "Prosthodontist",
+    "Dental Surgeon"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "@context": "https://schema.org",
+    "streetAddress": "Number 864, Prakriti, D Block, 60 Feet Road",
+    "addressLocality": "Sahakaranagar",
+    "addressRegion": "Bangalore",
+    "postalCode": ""
+  },
+  "rating": "99",
+  "work_timings": "Mo-Fr 09:30-20:00",
+  "clinic_name": "Impressions Dental Specialities",
+  "varified_label": "Medical Registration Verified",
+  "feedbacks": [
+    {
+      "date": "19 days ago",
+      "happyWith": [
+        "Doctor friendliness",
+        "Explanation of the health issue",
+        "Treatment satisfaction",
+        "Value for money",
+        "Wait time"
+      ],
+      "review_text": "Total hygiene is maintained at all levels. Costing is at par / the best as compared to others.Dr Basavaraj Biradar is a highly experienced doctor full of energy, utmost excellence in every treatment he does with full care, and attention to each patient visits Impressions Dental Specialties.I had done my root canal and tooth implant through Impressions Dental Specialties, and my experience was the best."
+    },
+    {
+      "title": "Visited for Dentures ( Metal Based )  Dental Services/ Ful Dental (Acrylic) / Teeth Whitening",
+      "date": "20 days ago",
+      "happyWith": [
+        "Doctor friendliness",
+        "Explanation of the health issue",
+        "Treatment satisfaction"
+      ],
+      "review_text": "Visiting impressions dental clinic and meeting Doctor Biradar was a game changer for my mom's ailing denture issues. With his extensive experience in denture making, he meticulously explained all the details of the procedure with correct outset of each sitting and listed undertaken work in our visit to the clinic. He is a great advisor in providing day to day use cases for optimal use of dentures while also taking great care of aesthetics of the finished product. The natural look of the finished product is impressive and beautiful. Thanks Doctor, we shall visit you soon again for a full family checkup."
+    },
+    {
+      "title": "Visited for Wisdom Tooth Extraction",
+      "date": "17 days ago",
+      "happyWith": [],
+      "review_text": "Best dental clinic and doctor. Got my wisdom tooth extracted, very experienced and friendly doctor. From now onwards it's go to dental clinic for me and my entire family."
+    },
+    {
+      "title": "Visited for Dental Fillings",
+      "date": "3 months ago",
+      "happyWith": [],
+      "review_text": "Cleaning 1000"
+    },
+    {
+      "title": "Visited for Dental Crowns",
+      "date": "3 months ago",
+      "happyWith": [],
+      "review_text": "Good environment, comfortable treatment, good staff. Affordable cost of treatment.  Happy to recommend to needy persons."
+    },
+    {
+      "date": "4 months ago",
+      "happyWith": ["Doctor friendliness"],
+      "review_text": "I used to have a lot of teeth pain and I came here then I took a appointment and they got me set up with root canal and they got me a cap 11 years back and till now I come here to this place if I have any issues"
+    },
+    {
+      "title": "Visited for Oral Prophylaxis",
+      "date": "3 months ago",
+      "happyWith": [],
+      "review_text": "He is respectful; always has a smile; his staff is wonderful and top it all .. now even has a smashing new premises/clinic."
+    },
+    {
+      "title": "Visited for Wisdom Tooth Extraction",
+      "date": "5 months ago",
+      "happyWith": [],
+      "review_text": "An amazing experience overall. Highly recommend the doctor to everyone with any dental issue! We had been to another dentist before visiting this place and I must say there is a vast difference in both. Loved the overall process. Thank you doctors and team ! :)"
+    },
+    {
+      "title": "Visited for Dental Examinations",
+      "date": "11 months ago",
+      "happyWith": [
+        "Explanation of the health issue",
+        "Doctor friendliness",
+        "Treatment satisfaction",
+        "Value for money"
+      ],
+      "review_text": "Very bad experience , my daughter visited for tooth pain . She had filling done twice in that tooth and was suggested for root canal by another doctor . So she visited to get second opinion. The doctor was not patient enough to listen to her at all and just sent her giving a paste saying she has sensitive gum where has she had a real tooth problem . Again my mother had come from native and was suffering with bad toothache , she was asked by doctor to take an X-ray but when they went to show the X-ray were asked to come after a week inspite of she saying she has bad toothache . Very unprofessional..! and was very disappointed."
+    },
+    {
+      "date": "4 months ago",
+      "happyWith": ["Doctor friendliness"],
+      "review_text": "I had gotten it during the 2021 lockdown and that time I was around 12-13 years old and now I am 15 getting them removed and the total results are flawless and amazing and I am really great ful to have the doctor's so co-operative with me"
+    }
+  ],
+  "available_slots": [
+    { "date": "today", "no_of_slots": 0 },
+    {
+      "date": "tomorrow",
+      "no_of_slots": 37,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 7,
+          "session_timings": [
+            "09:45 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 15,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 15,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Sat, 9 Sep",
+      "no_of_slots": 34,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 9,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 15,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 10,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM"
+          ]
+        }
+      ]
+    },
+    { "date": "Sun, 10 Sep", "no_of_slots": 0 },
+    {
+      "date": "Mon, 11 Sep",
+      "no_of_slots": 41,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 9,
+          "session_timings": [
+            "09:30 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Tue, 12 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Wed, 13 Sep",
+      "no_of_slots": 41,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 9,
+          "session_timings": [
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Thu, 14 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Fri, 15 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Sat, 16 Sep",
+      "no_of_slots": 36,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 10,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM"
+          ]
+        }
+      ]
+    },
+    { "date": "Sun, 17 Sep", "no_of_slots": 0 },
+    {
+      "date": "Mon, 18 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Tue, 19 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Wed, 20 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Thu, 21 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Fri, 22 Sep",
+      "no_of_slots": 42,
+      "available_sessions": [
+        {
+          "time_of_the_day": "morning",
+          "no_of_slots": 10,
+          "session_timings": [
+            "09:30 AM",
+            "09:45 AM",
+            "10:00 AM",
+            "10:15 AM",
+            "10:30 AM",
+            "10:45 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+          ]
+        },
+        {
+          "time_of_the_day": "afternoon",
+          "no_of_slots": 16,
+          "session_timings": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+            "02:15 PM",
+            "02:30 PM",
+            "02:45 PM",
+            "03:00 PM",
+            "03:15 PM",
+            "03:30 PM",
+            "03:45 PM"
+          ]
+        },
+        {
+          "time_of_the_day": "evening",
+          "no_of_slots": 16,
+          "session_timings": [
+            "04:00 PM",
+            "04:15 PM",
+            "04:30 PM",
+            "04:45 PM",
+            "05:00 PM",
+            "05:15 PM",
+            "05:30 PM",
+            "05:45 PM",
+            "06:00 PM",
+            "06:15 PM",
+            "06:30 PM",
+            "06:45 PM",
+            "07:00 PM",
+            "07:15 PM",
+            "07:30 PM",
+            "07:45 PM"
+          ]
+        }
+      ]
+    }
+  ]
+}
