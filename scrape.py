@@ -2,7 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import (
+    TimeoutException,
+    NoSuchElementException,
+    StaleElementReferenceException,
+)
 from bs4 import BeautifulSoup
 import re
 import time
@@ -114,31 +118,52 @@ def scrape_all_slots(doctor_page_url):
     return all_available_slots
 
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Scrape FEEDBACKS
-def scrape_all_feedbacks(docDetailSoup):
-    feedbacks = []
-    feedbacks_elms = docDetailSoup.find_all(
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Scrape STORIES
+def scrape_all_stories(doctor_detail_page_url):
+    driver = webdriver.Chrome()
+    driver.get(doctor_detail_page_url)
+
+    # tapping LOAD_MORE button till it disappears
+    while True:
+        try:
+            load_more_button = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable(
+                    (By.XPATH, '//button[@data-qa-id="view-more-feedback"]')
+                )
+            )
+            load_more_button.click()
+        except (NoSuchElementException, TimeoutException):
+            break  # button not found or not clickable
+        except StaleElementReferenceException:
+            pass  # element is stale > continue the loop
+
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+
+    stories = []
+    seen_stories = set()
+    stories_elms = soup.find_all(
         "div", class_="pure-g feedback--item u-cushion--medium-vertical"
     )
 
-    for eachFeedback in feedbacks_elms:
-        print("\n------------------ FEEDBACKS -------------------------\n")
-        feedback = {}
+    for story_elm in stories_elms:
+        story = {}
 
-        visitedSnippets = eachFeedback.find("p", {"data-qa-id": "visited-for"})
+        visitedSnippets = story_elm.find("p", {"data-qa-id": "visited-for"})
         if visitedSnippets is not None:
             titleSnippets = [
                 each.text.strip()
                 for each in visitedSnippets.find_all("span", class_="procedure")
             ]
             if len(titleSnippets) > 0:
-                feedback["title"] = "Visited for " + ", ".join(titleSnippets)
+                story["title"] = "Visited for " + ", ".join(titleSnippets)
+        else:
+            story["title"] = ""
 
-        date_elm = eachFeedback.find("span", {"data-qa-id": "web-review-time"})
-        feedback["date"] = " ".join(date_elm.stripped_strings)
+        date_elm = story_elm.find("span", {"data-qa-id": "web-review-time"})
+        story["date"] = " ".join(date_elm.stripped_strings)
 
-        happyWithElms = eachFeedback.find("p", {"data-qa-id": "happy-with"})
-        feedback["happyWith"] = (
+        happyWithElms = story_elm.find("p", {"data-qa-id": "happy-with"})
+        happy_with_list = (
             []
             if happyWithElms == None
             else [
@@ -146,17 +171,23 @@ def scrape_all_feedbacks(docDetailSoup):
                 for each in happyWithElms.find_all("span", class_="feedback__context")
             ]
         )
+        story["happyWith"] = tuple(happy_with_list)
 
-        feedback["review_text"] = (
-            eachFeedback.find("p", {"data-qa-id": "review-text"})
+        story["review_text"] = (
+            story_elm.find("p", {"data-qa-id": "review-text"})
             .get_text()
             .replace("*", "")
             .strip()
         )
 
-        feedbacks.append(feedback)
+        story_tuple = tuple(story.items())
+        frozen_story = frozenset(story_tuple)
 
-    return feedbacks
+        if frozen_story not in seen_stories:
+            seen_stories.add(frozen_story)  # making it 'seen'
+            stories.append(dict(frozen_story))  # appending to list
+
+    return stories
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Scrape DOCTOR_DETAILS
@@ -211,8 +242,8 @@ def scrape_doctor_details(doctor_elm):
         .strip()
     )
 
-    # Feedbacks (stories)
-    doctor_info["feedbacks"] = scrape_all_feedbacks(docDetailSoup)
+    # Stories (stories)
+    doctor_info["stories"] = scrape_all_stories(doctor_detail_page_url)
 
     # Avaliable Slots
     doctor_info["available_slots"] = scrape_all_slots(doctor_detail_page_url)
@@ -231,7 +262,6 @@ for page_number in range(1, 6):
     doctors_list_elms = docListSoup.find_all("div", class_="listing-doctor-card")
 
     for doctor_elm in doctors_list_elms:
-        print("\n------------------ DOCTOR DETAIL -------------------------\n")
         doc_data = scrape_doctor_details(doctor_elm)
 
         doctors_data.append(doc_data)
