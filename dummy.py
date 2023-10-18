@@ -39,3 +39,65 @@
 #     .get_text()
 #     .strip()
 # )
+
+
+# --------------------------------------------------------------------------------
+# # checking if doctor_specilities is in the LIST
+# --------------------------------------------------------------------------------
+# doc_specialities = jsonData[0]["medicalSpecialty"]
+# is_in_specilities_list = False
+
+# for each in doc_specialities:
+#     speciality = each.lower()
+
+#     if speciality in specialities:
+#         is_in_specilities_list = True
+#     else:
+#         new_specialities.append(speciality)
+
+# if not is_in_specilities_list:
+#     return {"status": False}
+
+
+# specialities = [
+#     "cardiology",
+#     "neurology",
+#     "orthopedics",
+#     "endocrinology",
+#     "gastroenterology",
+#     "oncology",
+#     "nephrology",
+#     "rheumatology",
+#     "pulmonology",
+#     "dermatology",
+#     "psychiatry",
+#     "ophthalmology",
+#     "radiology",
+#     "anesthesiology",
+#     "critical care medicine",
+#     "hematology",
+#     "neonatology",
+#     "pathology",
+#     "urology",
+#     "gynecology and obstetrics",
+#     "pediatrics",
+#     "nuclear medicine",
+#     "transplant surgery",
+#     "plastic surgery",
+#     "sports medicine",
+#     "neurosurgery",
+#     "pediatric surgery",
+#     "interventional radiology",
+#     "geriatric medicine",
+#     "allergy and immunology",
+#     "cardiothoracic surgery",
+#     "forensic medicine",
+#     "palliative medicine",
+#     "infectious disease",
+#     "emergency medicine",
+#     "hepatology",
+#     "vascular surgery",
+#     "maxillofacial surgery",
+#     "preventive and social medicine",
+#     "trauma and acute care surgery",
+# ]

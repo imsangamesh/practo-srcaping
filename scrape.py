@@ -12,24 +12,7 @@ import re
 import time
 import requests
 import json
-
-# Name
-# Degree
-# Experience
-# Verified
-# Rating
-# Description
-
-# Slots available
-# Clinic Name
-# Address
-# Work timings
-
-# All the user stories
-# Story title
-# date
-# tags
-# story
+import sys
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Scrape AVAILABLE SLOTS
@@ -163,7 +146,7 @@ def scrape_all_stories(doctor_detail_page_url):
         story["date"] = " ".join(date_elm.stripped_strings)
 
         happyWithElms = story_elm.find("p", {"data-qa-id": "happy-with"})
-        happy_with_list = (
+        happyWith_list = (
             []
             if happyWithElms == None
             else [
@@ -171,7 +154,7 @@ def scrape_all_stories(doctor_detail_page_url):
                 for each in happyWithElms.find_all("span", class_="feedback__context")
             ]
         )
-        story["happyWith"] = tuple(happy_with_list)
+        story["happy_with"] = tuple(happyWith_list)
 
         story["review_text"] = (
             story_elm.find("p", {"data-qa-id": "review-text"})
@@ -185,7 +168,10 @@ def scrape_all_stories(doctor_detail_page_url):
 
         if frozen_story not in seen_stories:
             seen_stories.add(frozen_story)  # making it 'seen'
-            stories.append(dict(frozen_story))  # appending to list
+
+            final_story = dict(frozen_story)
+            final_story["happy_with"] = list(final_story["happy_with"])
+            stories.append(final_story)  # appending to list
 
     return stories
 
@@ -200,12 +186,33 @@ def scrape_doctor_details(doctor_elm):
         .strip()
         .replace("?practice_id", "/recommended?practice_id")
     )
+
     response = requests.get(doctor_detail_page_url)
     docDetailSoup = BeautifulSoup(response.text, "html.parser")
     doctor_info = {}
 
     rawJsonData = docDetailSoup.find("script", {"type": "application/ld+json"}).string
     jsonData = json.loads(rawJsonData)
+
+    # checking if doctor has a MBBS degree
+    qualifications = [
+        each.strip()
+        for each in docDetailSoup.find("p", {"data-qa-id": "doctor-qualifications"})
+        .text.strip()
+        .split(",")
+    ]
+
+    if "MBBS" not in [each.upper() for each in qualifications]:
+        return {"status": False}
+
+    # Status
+    doctor_info["status"] = True
+
+    # Qualification
+    doctor_info["qualifications"] = qualifications
+
+    # Specialities
+    doctor_info["specialities"] = jsonData[0]["medicalSpecialty"]
 
     # Name
     doctor_info["name"] = jsonData[0]["name"]
@@ -219,14 +226,8 @@ def scrape_doctor_details(doctor_elm):
     # Description
     doctor_info["description"] = jsonData[0]["description"]
 
-    # Degree
-    doctor_info["degree"] = jsonData[0]["medicalSpecialty"]
-
     # Address
     doctor_info["address"] = jsonData[0]["address"]
-
-    # Rating
-    doctor_info["rating"] = jsonData[0]["aggregateRating"]["ratingValue"]
 
     # Work timings
     doctor_info["work_timings"] = jsonData[0]["memberOf"][0]["openingHours"][0]
@@ -251,26 +252,57 @@ def scrape_doctor_details(doctor_elm):
     return doctor_info
 
 
-base_url = "https://www.practo.com/search/doctors?results_type=doctor&q=%5B%7B%22word%22%3A%22Dentist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&city=Bangalore&page="
-doctors_data = []
-
-for page_number in range(1, 6):
-    url = base_url + str(page_number)
-    response = requests.get(url)
-
-    docListSoup = BeautifulSoup(response.text, "html.parser")
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Scrape ALL DOCTORS in a PAGE
+def scrape_all_doctors_in_a_page(docListSoup):
     doctors_list_elms = docListSoup.find_all("div", class_="listing-doctor-card")
 
     for doctor_elm in doctors_list_elms:
         doc_data = scrape_doctor_details(doctor_elm)
 
-        doctors_data.append(doc_data)
+        if doc_data["status"] == True:
+            # Rating
+            doc_data["rating"] = [
+                each
+                for each in doctor_elm.find(
+                    "span", {"data-qa-id": "doctor_recommendation"}
+                ).stripped_strings
+            ][0]
+
+            doctors_data.append(doc_data)
 
     time.sleep(1)  # optional delay before fetching next page
-    break
 
 
-for data in doctors_data:
-    print("\n-------------------------------------------\n")
-    print(data)
-    print("\n-------------------------------------------\n")
+# ====================================================================================
+# ======================================= START ======================================
+# ====================================================================================
+base_url = "https://www.practo.com/search/doctors?results_type=doctor&q=%5B%7B%22word%22%3A%22neurologist%22%2C%22autocompleted%22%3Atrue%2C%22category%22%3A%22subspeciality%22%7D%5D&city=bangalore&page"
+doctors_data = []
+
+page_number = 1
+while True:
+    url = base_url + str(page_number)
+    driver = webdriver.Chrome()
+    driver.get(url)
+
+    docListSoup = BeautifulSoup(driver.page_source, "html.parser")
+    scrape_all_doctors_in_a_page(docListSoup)  # scraping
+    print(f"\nscraped page {page_number} \n")
+
+    try:
+        next_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable(
+                (By.CSS_SELECTOR, 'a[data-qa-id="pagination_next"]')
+            )
+        )
+        next_button.click()
+        page_number += 1
+    except Exception:
+        break
+
+
+# Serialize the data as JSON and WRITE to the file
+with open("output.json", "w", encoding="utf-8") as file:
+    json.dump(doctors_data, file, ensure_ascii=False, indent=4)
+
+print(f"{len(doctors_data)} posts output saved to '{'output.json'}'")
