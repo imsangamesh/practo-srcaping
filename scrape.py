@@ -179,6 +179,9 @@ def scrape_doctor_details(doctor_elm):
     # Name
     doctor_info["name"] = jsonData[0]["name"]
 
+    # Page Url
+    doctor_info["doctor_page_url"] = doctor_detail_page_url
+
     # Image
     doctor_info["image"] = jsonData[0]["image"]
 
@@ -240,7 +243,11 @@ for page_number in range(1, 6):
     break
 
 
-for data in doctors_data:
-    print("\n-------------------------------------------\n")
-    print(data)
-    print("\n-------------------------------------------\n")
+# for data in doctors_data:
+#     print("\n-------------------------------------------\n")
+#     print(data)
+#     print("\n-------------------------------------------\n")
+
+with open("output.json", "w") as json_file:
+    json.dump(doctors_data, json_file)
+    print("\nOutput stored in JSON file")
